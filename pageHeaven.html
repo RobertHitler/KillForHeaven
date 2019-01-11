@@ -1,0 +1,127 @@
+<!Doctype html>
+<html>
+<head>
+<title>||HEAVEN||</title>
+<!--<meta http-equiv="refresh" content="2;url=index.html">-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!--<link rel="stylesheet" type="text/css"  href="../css/style.css" >-->
+
+<!--style_sheet_-->
+
+<style>
+	.header-text{
+	color: black;
+	font-family:"Lucida Console";
+	text-align: center;
+	padding: 50px;
+	text-transform: uppercase;
+	
+}
+.header-text h2{
+	width: 100%;
+	padding: 10px 0px;
+	margin-bottom: 50px;
+	font-weight: 600;
+	margin-top: 10%;
+	
+	/*text-shadow: 3px 6px 5px grey;*/
+}
+
+.header-text h2::after{
+	content:"";
+	position: absolute;
+	bottom: 320px;
+	left: 50%;
+	width: 150px;
+	height: 1px;
+	background-color:#8A8A8A;
+	margin-left: -75px;
+	
+}
+.header{
+	width: 100%;
+	height: 1080px;
+	/*background-color:#E9E9E9;*/
+	background-image: url(../sky.jpeg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+	
+}
+.header-overlay{
+	width: 100%;
+	height: 1000px;
+	background-color:rgba(34,34,34,0.2);
+}
+
+.header-btn{
+	width:100%;
+}
+/*media query for mobile*/
+
+
+@media only screen and (max-width:475px){
+	.header-text{
+		width: 100%;
+		text-align: center;
+		padding: 0px;
+		
+	}
+	
+	.header-text h2{
+		width: 80%;
+		margin-left: 10%;
+		float: left;
+		font-size: 18px;
+		font-weight: 500;
+		padding-top: 30px;
+	}
+	
+	.header{
+		height: 650px;
+		background-image: url(../sky_mob.jpg);
+		
+	}
+	
+	.header-text h2::after{
+		bottom: 420px;
+	}
+	
+	
+	.header-overlay{
+		padding-top: 50px;
+		height: 600px;
+	}
+}
+		
+</style>
+</head>
+
+<body>
+<!--header-->
+<header>
+	<div class="header">
+		<div class="header-overlay">
+		<div class="container">
+		<!--text in the header-->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="header-text">
+						<h2>Congratulations!<br> You have reached one step closer to Heaven. </h2>   
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</header>
+</body>
+</html>
+

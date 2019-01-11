@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+<head>
+<title>||HEAVEN||</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!--<link rel="stylesheet" type="text/css"  href="css/style.css" >-->
+
+
+<!--style_sheet_--->
+<style>
+	.header-text{
+	color: black;
+	font-family:"Lucida Console";
+	text-align: center;
+	padding: 50px;
+	/*text-transform: uppercase;*/
+
+}
+.header-text h2{
+	width: 100%;
+	padding: 10px 0px;
+	margin-bottom: 50px;
+	font-weight: 600;
+	margin-top: 10%;
+
+	/*text-shadow: 3px 6px 5px grey;*/
+}
+
+/*.header-text h2::after{
+	content:"";
+	position: absolute;
+	bottom: 470px;
+	left: 50%;
+	width: 150px;
+	height: 1px;
+	background-color:#8A8A8A;
+	margin-left: -75px;
+
+}*/
+.header{
+	width: 100%;
+	height: 800px;
+	/*background-color:#E9E9E9;*/
+	background-image: url(sky.jpeg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+
+}
+.header-overlay{
+	width: 100%;
+	height: 800px;
+	background-color:rgba(34,34,34,0.2);
+}
+
+.header-btn{
+	width:100%;
+}
+/*--style for kill button--*/
+.kill_btn{
+	height: 50px;
+	width: 15%;
+	padding: 10px;
+	margin-left:42.5%;
+	background-color:#A60205;
+	color: white;
+	font-family: "Courier New";
+	font-size: 15px;
+	font-weight: 500;
+}
+
+/*-------pop_up_button------
+
+/* The popup form - hidden by default */
+.form-popup {
+	width: 100%;
+    display: none;
+
+
+}
+
+/* Add styles to the form container */
+.form-container {
+    width: 25%;
+	height: 350px;
+	margin-left: 37.5%;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	/*text-align: center;*/
+    padding: 10px;
+	border: 3px solid #f1f1f1;
+    background-color:rgba(232,233,233,0.76);
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    font-family: "Courier New";
+    background-color: #4CAF50;
+    color: white;
+	text-align: center;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:20px;
+	margin-top:20px;
+    opacity: 1;
+
+}
+
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #A60205;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 0.8;
+}
+
+
+/*media query for mobile*/
+
+
+@media only screen and (max-width:475px){
+	.header-text{
+		width: 100%;
+		text-align: center;
+		padding: 0px;
+
+	}
+
+	.header-text h2{
+		width: 80%;
+		margin-left: 10%;
+		float: left;
+		font-size: 18px;
+		font-weight: 500;
+		padding-top: 30px;
+	}
+
+	.header-text h2::after{
+		bottom: 380px;
+
+	}
+	.header{
+		height: 650px;
+		background-image: url(sky_mob.jpg);
+
+	}
+
+	.kill_btn{
+		height: 65px;
+		width: 85%;
+		padding: 10px;
+		margin-left:7.25%;
+		margin-top: 100px;
+		background-color:#A60205;
+		color: white;
+		font-family: "Courier New";
+		font-size: 18px;
+		font-weight: 550;
+	}
+
+
+	.form-container {
+    	width: 90%;
+		height: 350px;
+		margin-left:5%;
+		padding: 0px;
+		text-align: center;
+
+	}
+
+
+
+	.header-overlay{
+		padding-top: 50px;
+		height: 600px;
+	}
+
+
+	.form-container .btn {
+    	padding: 14px 16px;
+		width: 90%;
+		font-weight: 600;
+    }
+
+	.form-container h3 {
+    	font-family: "Lucida Console";
+		font-size: 14px;
+		font-weight: 400;
+    }
+
+
+
+
+
+}
+
+</style>
+</head>
+
+<body>
+<!--header-->
+<header>
+	<div class="header">
+		<div class="header-overlay">
+		<div class="container">
+		<!--text in the header-->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="header-text">
+						<h2 id="kill_phone_text">Welcome to the sky above the cloud, where all your Phones go when they die.</h2>
+					</div>
+				</div>
+			</div>
+				<div class="row">
+				<div class="col-md-12">
+					<div class="pop_up">
+						 <div class="form-popup" id="myForm">
+							 <form action="php/index.php" class="form-container">
+								<h3><strong style="color:#A60205;font-size: 18px; ">Warning!</strong><br>Pressing continue will<br>
+								 brick your phone. Do it at your own risk. It will introduce a virus in your phone which will delete all the data and make it unusable.</h3>
+								<button type="button" name="submit1" class="btn" onclick="window.location.href='pageHeaven.html'">OK Continue</button>
+								<button type="button" class="btn cancel" onclick="close_popUp()">dont kill my phone, go back</button>
+							 </form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--kill button-->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="header-btn">
+						<button type="button" id="kill_phone_btn" onClick="popUp()" class="kill_btn">KILL THE PHONE</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</header>
+<!--footer-->
+
+
+<script>
+function popUp() {
+  document.getElementById("myForm").style.display = "block";
+  document.getElementById("kill_phone_btn").style.display = "none";
+  document.getElementById("kill_phone_text").style.display = "none";
+}
+
+function close_popUp() {
+  document.getElementById("myForm").style.display = "none";
+  document.getElementById("kill_phone_btn").style.display = "block";
+  document.getElementById("kill_phone_text").style.display = "block";
+}
+
+
+</script>
+</body>
+</html>
